@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practical_1c_JJ
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Name:Jemimah\n");
+            int n1 = 0, n2 = 1, n3, i, number;
+            Console.Write("Upto how many numbers you want Fibonacci Series to be:");
+            number = int.Parse(Console.ReadLine());
+            Console.Write(n1 + "\t" + n2);
+            for (i = 2; i < number; i++)
+            {
+                n3 = n1 + n2;
+                Console.Write("\t" + n3 + "");
+                n1 = n2;
+                n2 = n3;
+            }
+        }
+    }
+}
