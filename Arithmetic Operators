@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practical_1a_JJ
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Name:Jemimah\n");
+            Console.Write("Enter the First Number: ");
+            double n1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter the Second Number: ");
+            double n2 = Convert.ToDouble(Console.ReadLine());
+
+            double addition = n1 + n2;
+            double subtraction = n1 - n2;
+            double multiplication = n1 * n2;
+            double division = n1 / n2;
+
+            Console.WriteLine($"\nResults: ");
+            Console.WriteLine($"Addition: {n1} + {n2} = {addition}");
+            Console.WriteLine($"Subtraction: {n1} - {n2} = {subtraction}");
+            Console.WriteLine($"Multiplication: {n1} * {n2} = {multiplication}");
+            Console.WriteLine($"Division: {n1} / {n2} = {division}");
+        }
+    }
+}
