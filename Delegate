@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practical_2B
+{
+    public delegate int Operation(int x, int y);
+    class Program
+    {
+        public static int Add(int x, int y)
+        {
+            return x + y;
+        }
+        public static int Sub(int x, int y)
+        {
+            return x - y;
+        }
+        static void Main(string[] args)
+        {
+            Console.Write("Name: Jemimah\n");
+            Operation addOperation = new Operation(Add);
+            Operation subOperation = new Operation(Sub);
+
+            Console.Write("Enter the First Number: ");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.Write("Enter the Second Number: ");
+            int num2 = int.Parse(Console.ReadLine());
+
+            int additionResult = addOperation(num1, num2);
+            Console.WriteLine($"Addition Result: {additionResult}");
+            int subtractionResult = subOperation(num1, num2);
+            Console.WriteLine($"Subtraction Result: {subtractionResult}");
+        }
+    }
+}
