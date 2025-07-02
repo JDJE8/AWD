@@ -1,2 +1,11 @@
-Console.Write = Print
+Console.Write = Output text (and the values of variables) to the console window, 
+                but without automatically moving to the next line afterward.
+Console.WriteLine = 
+Console.Read = Read the next character
+Console.ReadLine = Read a line of text input
 Console.ReadKey(); = Getch(); [To hold the Console]
+Parse = converting a string into an instance of a specific data type
+Console.WriteLine = Output Text
+Boxing = implicit
+Unboxing = Explicit
+Delegate = References to methods
