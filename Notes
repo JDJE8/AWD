@@ -1,1 +1,2 @@
 Console.Write = Print
+Console.ReadKey(); = Getch(); [To hold the Console]
