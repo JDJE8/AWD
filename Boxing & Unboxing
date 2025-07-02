@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practical_2A
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Name: Jemimah\n");
+            int num = 123;
+            object obj = num;
+            obj = 145;
+
+            Console.WriteLine("Boxing: ");
+            Console.WriteLine($"Value type (int): {num}");
+            Console.WriteLine($"Boxed type (object): {obj}");
+
+            int unboxedNum = (int)obj; //Unboxing obj is converted
+
+            //Display unboxed Value
+            Console.WriteLine("\nUnboxing: ");
+            Console.WriteLine($"Boxed type (object): {obj}");
+            Console.WriteLine($"Value type (int): {num}");
+            Console.WriteLine($"Unboxed type (int): {unboxedNum}");
+        }
+    }
+}
