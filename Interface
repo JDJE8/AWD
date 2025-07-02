@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practical_2C
+{
+    interface IAnimal
+    {
+        void animalSound();
+    }
+    class Cat : IAnimal
+    {
+        public void animalSound()
+        {
+            Console.WriteLine("The Cat Says : Meow Meow");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Name: Jemimah\n");
+            Cat myCat = new Cat();
+            myCat.animalSound();
+        }
+    }
+}
